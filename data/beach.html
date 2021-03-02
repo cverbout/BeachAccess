@@ -1,0 +1,1560 @@
+<HTML>
+<HEAD>
+  <TITLE> FGDC Metadata for BEACH </TITLE>
+</HEAD>
+<BODY>
+<H1><font face="Arial, Helvetica, sans-serif">Metadata for BEACH</font></H1>
+<PRE>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="TOC"> Table of Contents </A>
+</font></H3>
+<PRE>
+<font face="Arial, Helvetica, sans-serif"><A href="#section1">Identification_Information</A>
+     <A href="#section1.2.1">Abstract </A>
+     <A href="#section1.2.2">Purpose </A>
+     <A href="#section1.2.3">Supplemental Information </A>
+<A href="#section2">Data_Quality_Information</A>
+<A href="#section3">Spatial_Data_Organization_Information</A>
+<A href="#section4">Spatial_Reference_Information</A>
+<A href="#section5">Entity_and_Attribute_Information</A>
+     <A href="#section5">Detailed Description</A>
+     <A href="#section5.2.1">Overview </A>
+<A href="#section6">Distribution_Information</A>
+<A href="#section7">Metadata_Reference_Section</A>
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section1">Identification_Information </A>
+</font></H3>
+<font face="Arial, Helvetica, sans-serif"><B><A name="section1.1">Citation_Information </A></B>
+    <B>Originator:</B> Oregon Department of Parks and Recreation
+    <B>Publication_Date:</B> March 31, 1989
+    <B>Title:</B> Inventory of Oregon Coastal Beach Access Sites
+    <B>Geospatial_Data_Presentation_Format:</B> Database
+<B><A name="section1.2">Description </A></B> 
+    <B><A name="section1.2.1">Abstract</A></B>
+    The beach access points theme was created to display the location
+    of public beach access along the Oregon Coast.  Boat ramp
+    locations were added to the dataset to allow users to view the
+    location of boat ramps along the Columbia River and the
+    Willamete River north of the Oregon City Dam.
+    <B><A name="section1.2.2">Purpose</A></B>
+    The theme allows the user to locate and extract information on
+    various beach access locations.  The information includes
+    approximate geographic location and attributes defining the
+    development level of the site.
+<B><A name="section1.2.3">Supplemental_Information</A></B>
+    <B>Procedures_Used</B>
+    The data was gathered from two different sources.  The items in the
+    data base from area to Parking-Added came from a report created for
+    OPRD by The Benkendorf Associates Corporaton.  The site locations
+    were derived from various state, local and private sources.
+    Information sheets were derived for each identified location.  The
+    data was placed into a lotus spread sheet.  The data was than sent
+    out to the local sources who checked it for accuracy.  The second
+    group of attributes (items after Parking-Added) were supplied by the
+    Oregon Marine Board with assistance from the Oregon Department of
+    Fish and Wildlife.  The information gathering and presentation was
+    funded in part by the US fish and wildlife Sport Fish Restoration
+    Program.  In January of 1991 the State Service Center for GIS
+    (SSCGIS) made a blank coverage by using the Arc/Info Create command
+    getting the projection and tic locations from another theme.  The
+    theme was edited using Arc/Infos ArcEdit modual.  (As with much
+    of the history of this coverage no documentation was kept for what
+    was edited.  Due to the creation of point topology it is assumed
+    most of the editing involved the addition of points.)  The theme
+    was built for polygon topology.  The theme was edited several more
+    times in arcedit.  Once the externalall command was run in order to
+    correct the file path names.  Arcedit was run again and the theme
+    was again externalled.  The theme was built for point topology and
+    exported out in Februrary of 1991.  In March of 1991 the theme was
+    copied to a new workspace and editted several time over the next
+    month.  The externalall command was run and the theme was again
+    edited.  Point topology was built for the theme, it was externalall
+    to correct directory names and it was again built for topology.  The
+    theme was edited built for topology and copied to new workspaces
+    several times over the next month.  The theme was renamed back to its
+    original name in May of 1991 (it had been copied to another name a
+    few weeks previous to this time.  The theme was built for point
+    topology and again edited.  The theme was edited built for topology
+    and externalalled several times during the next few months.
+    (NOTE: The SSCGIS assumes that the 1990 log file entry dates are a
+    mistake.  They should say 1991.)  The theme was projected to UTM
+    coordinates and built for point topology.  The theme was copied to
+    a new directory and externalalled to correct the path names.  The
+    theme was than copied to a new name.  The theme was exported out
+    and the path names were corrected using the externalall command.
+    The theme was than renamed twice and the externalall command was
+    run on it.  The theme was built for point topology and left alone
+    for six months.  It was externalled and built for topology again.
+    The theme was renamed to its current name and built for topology
+    in June of 1992.  The subdirectory pathnames were corrected
+    using the externalall command.  The theme was projectected in
+    March 1993 to a lambert projection.  The theme was exported
+    for use on the SSCGIS ftp site in April of 1995.  The theme
+    was imported in February 1997 so it could be projected into the
+    current state data transfer standard (lamber international feet.)
+    The theme imported in during December 1997 so metadata could be
+    created for it.  The metadata was finished in February 1998 (after
+    documents were obtained from OPRD (Oregon Parks and Recreation).
+    The theme was exported and put on the sscgis ftp site.
+    <B>Revisions</B>
+    Original Version
+    <B>Reviews_Applied_to_Data</B>
+    The theme is a legacy dataset.  Reviews were applied, but there is
+    no institutional knowledge of what they entailed.
+    <B>Related_Spatial_and_Tabular_Data_Sets</B>
+    None
+    <B>References_Cited</B>
+    This theme was created from references provided by OPRD, DLCD,
+    and the Oregon Marine Board.
+    <B>Notes</B>
+    Items from area to parking-capacity were provided by a consultant
+    report done for OPRD and DLCD.  The items after parking-capacity
+    come from the Oregon Marine Board.  Points along the coast and
+    along the Columbia River in Clatsop county came from the OPRD-
+    DLCD report.  The points along the Columbia River and the
+    Wilamette River come from the Oregon Marine Board.  Wilamette
+    River is limited to points north of the Oregon City Falls.
+<B><A name="section1.3">Time_Period_of_Content</A></B>
+    <B>Single_Date/Time</B>
+    Calendar_Date: 19910129
+    <B>Currentness_Reference</B>
+    The theme is current as of 1989.
+<B><A name="section1.4">Status</A></B>
+    <B>Progress:</B> complete
+    <B>Maintenance_and_Update_Frequency</B>
+    As needed.  (Plans are underway to revise the database (2/1998)).
+<B><A name="section1.5">Spatial_Domain</A></B>
+    <B>Bounding_Coordinates</B>
+    West_Bounding_Coordinate: -124.80265543
+    East_Bounding_Coordinate: -119.13285981
+    North_Bounding_Coordinate: 46.27273061
+    South_Bounding_Coordinate: 41.99674598
+<B><A name="section1.6">Keywords</A></B>
+    <B>Theme</B>
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword:  Oregon, Beach, Access Points
+    <B>Place</B>
+        Place_Keyword_Thesaurus: None
+        Place_Keyword:  Oregon Coast, Columbia River and Willamette River north of Oregon City Falls
+    <B>Stratum</B>
+        Stratum_Keyword_Thesaurus: None
+        Stratum_Keyword:
+    <B>Temporal</B>
+        Temporal_Keyword_Thesaurus: None
+        Temporal_Keyword:
+<B><A name="section1.7">Access_Constraints</A></B>
+N/A.
+<B><A name="section1.8">Use_Constraints</A></B>
+The data was heads up digitized on a 1:100,000 scale basemap.
+The heads up digitizing introduces a slight locational
+error to the dataset.
+<B><A name="section1.9">Point_of_Contact:</A></B> See <A href="#section6">Distribution_Information</A> for contact information.
+<B><A name="section1.12">Data_Set_Credit</A></B>
+This theme was created from data gathered for OPRD, DLCD and
+Oregon State Marine Board.  The GIS theme was created by the
+SSCGIS.
+<B><A name="section1.12">Security_Information</A></B>
+    Security_Classification_System: None
+    Security_Classification:  UNCLASSIFIED
+    Security_Handling_Description: None
+<B><A name="section1.13">Native_Data_Set_Environment:</A></B> Windows_NT Windows_NT, ARC/INFO version 7.1.1
+<B>Cross_Reference</B>
+    <B>Originator:</B> US Census Bureau
+    <B>Publication_Date:</B> 1992
+    <B>Publication_Time:</B> 
+    <B>Title:</B> 1992 Tiger Files
+    <B>Edition:</B> 
+    <B>Geospatial_Data_Presentation_Form:</B> 
+    <B>Series_Information</B>
+        Series_Name: 
+        Issue_Identification: 
+    <B>Publication_Information</B>
+        Publication_Place: 
+        Publisher: Department of Commerce
+    <B>Other_Citation_Details:</B> 
+    <B>Online_Linkage:</B> 
+    <B>Larger_Work_Citation:</B> 
+<BR>
+<B>Cross_Reference</B>
+    <B>Originator:</B> DLCD and OPRD
+    <B>Publication_Date:</B> March 31, 1989
+    <B>Publication_Time:</B> 
+    <B>Title:</B> Inventory of Oregon Coastal Beach Access Sites
+    <B>Edition:</B> 
+    <B>Geospatial_Data_Presentation_Form:</B> Database
+    <B>Series_Information</B>
+        Series_Name: 
+        Issue_Identification: 
+    <B>Publication_Information</B>
+        Publication_Place: 
+        Publisher: 
+    <B>Other_Citation_Details:</B> 
+    <B>Online_Linkage:</B> 
+    <B>Larger_Work_Citation:</B> 
+<BR>
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section2">Data_Quality_Information</A>
+</font></H3>
+<font face="Arial, Helvetica, sans-serif"><B>Attribute_Accuracy</B>
+    <B>Attribute_Accuracy_Report:</B> See <A href="#section5">Entity_Attribute_Information</A>
+    <B>Quantitative_Attribute_Accuracy_Assessment</B>
+        Attribute_Accuracy_Value:  See Explanation
+        Attribute_Accuracy_Explanation:
+           Attribute accuracy is described, where present, with each
+           attribute defined in the Entity and Attribute Section.
+<B><A name="section2.2">Logical_Consistency_Report:</A></B> Point features present.
+<B><A name="section2.3">Completeness_Report</A></B>
+The dataset is limited to the Coast, Columbia River and the Wilamette
+River north of Oregon City Falls.
+<B><A name="section12.4">Positional_Accuracy </A></B>
+    <B>Horizontal_Positional_Accuracy</B>
+        Horizontal_Positional_Accuracy_Report:
+        Unknown
+    <B>Vertical_Positional_Accuracy</B>
+        Vertical_Positional_Accuracy_Report:
+        N/A
+<B><A name="section12.5">Lineage:</A></B> See <A href="#section1.2.3">Supplemental_Information</A> for overview.
+<B>Process_Steps</B>
+    <B>Process_Step</B>
+    Process_Description: CREATE AXIS.OCS /AWESOME/OCS/COAST/COASTLIN.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910129 
+    Process_Time:  1718
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910129 
+    Process_Time:  1733
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910129 
+    Process_Time:  1734
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910129 
+    Process_Time:  1854
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910129 
+    Process_Time:  1908
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910129 
+    Process_Time:  1924
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910130 
+    Process_Time:  1155
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910201 
+    Process_Time:  1340
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910201 
+    Process_Time:  1413
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910201 
+    Process_Time:  1446
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910201 
+    Process_Time:  1450
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910203 
+    Process_Time:  1752
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910203 
+    Process_Time:  1816
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910203 
+    Process_Time:  1857
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910203 
+    Process_Time:  1901
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910207 
+    Process_Time:  1615
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910210 
+    Process_Time:  1823
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910212 
+    Process_Time:  1211
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910217 
+    Process_Time:  2340
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /HOME/BART/RAC.OLD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910219 
+    Process_Time:  1959
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910222 
+    Process_Time:  1640
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910222 
+    Process_Time:  1640
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXPORT COVER AXIS.OCS AXIS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910222 
+    Process_Time:  1641
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.OCS /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910322 
+    Process_Time:  1110
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910325 
+    Process_Time:  1538
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910325 
+    Process_Time:  1603
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910325 
+    Process_Time:  1625
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910325 
+    Process_Time:  1652
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1129
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1326
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1341
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1358
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1417
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1430
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1444
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1455
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1457
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910408 
+    Process_Time:  1525
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1126
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1150
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1230
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1247
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1315
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1322
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1351
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1429
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910409 
+    Process_Time:  1440
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910410 
+    Process_Time:   859
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910410 
+    Process_Time:  1152
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910410 
+    Process_Time:  1303
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910410 
+    Process_Time:  1317
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910410 
+    Process_Time:  1318
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910411 
+    Process_Time:  1404
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910411 
+    Process_Time:  1409
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910411 
+    Process_Time:  1410
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910411 
+    Process_Time:  1410
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1042
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1224
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1258
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1432
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1505
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1524
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1533
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1552
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1553
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910417 
+    Process_Time:  1600
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.OCS ../AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910418 
+    Process_Time:  1158
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNAL AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910418 
+    Process_Time:  1158
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.OCS DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910419 
+    Process_Time:   923
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910419 
+    Process_Time:   940
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910419 
+    Process_Time:  1040
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910419 
+    Process_Time:  1124
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910419 
+    Process_Time:  1441
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description:                                                     199104301441   0     0     0
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  '    ''  ''  ' 
+    Process_Time:    '  '
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910503 
+    Process_Time:  1548
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910503 
+    Process_Time:  1600
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.OCS AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:   911
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.TST POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:   912
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.TST POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1245
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1408
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1450
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1459
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1503
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1516
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1626
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: RENAME AXIS.TST AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1627
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910508 
+    Process_Time:  1627
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1239
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1300
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1358
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1403
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1418
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1430
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1525
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1749
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1752
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910509 
+    Process_Time:  1753
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910510 
+    Process_Time:  1002
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910515 
+    Process_Time:  1502
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910515 
+    Process_Time:  1524
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910515 
+    Process_Time:  1529
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910515 
+    Process_Time:  1629
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910515 
+    Process_Time:  1705
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900521 
+    Process_Time:  1447
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900521 
+    Process_Time:  1449
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900521 
+    Process_Time:  1506
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ARCEDIT /DAD/DEQ/AXIS.OCS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900521 
+    Process_Time:  1627
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.OCS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900521 
+    Process_Time:  1630
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.OCS AXIS.TST
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900521 
+    Process_Time:  1645
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900524 
+    Process_Time:   954
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900603 
+    Process_Time:   928
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900614 
+    Process_Time:  1319
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900617 
+    Process_Time:  1014
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: PROJECT COVER AXIS.TST AXIS.UTM /DUDE/PROJECT/OCSLAM2UTM
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900701 
+    Process_Time:  1004
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD AXIS.UTM POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900706 
+    Process_Time:  1854
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.UTM /BEER/OCS/UTMDATA/AXIS.UTM
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900706 
+    Process_Time:  1854
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900709 
+    Process_Time:  1423
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19900709 
+    Process_Time:  1719
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910712 
+    Process_Time:  1442
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: COPY AXIS.UTM BEACH.UTM
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910714 
+    Process_Time:  1517
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXPORT COVER BEACH.UTM BEACH
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910714 
+    Process_Time:  1518
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910715 
+    Process_Time:  1951
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910830 
+    Process_Time:  1410
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: RENAME BEACH.UTM BEACH
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910830 
+    Process_Time:  1420
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: RENAME BEACH ACCESS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910830 
+    Process_Time:  1420
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19910903 
+    Process_Time:  1049
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD ACCESS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19911013 
+    Process_Time:  1358
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19911003 
+    Process_Time:  1104
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920413 
+    Process_Time:  1605
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920530 
+    Process_Time:  1554
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD ACCESS POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920603 
+    Process_Time:  1636
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920502 
+    Process_Time:  1333
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920610 
+    Process_Time:  1112
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: RENAME ACCESS BEACH
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920613 
+    Process_Time:  1643
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: BUILD BEACH POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19920613 
+    Process_Time:  1643
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19930310 
+    Process_Time:   954
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: PROJECT COVER BEACH /DLIB/UTIL/K100/BEACH /BEER/PROJECT/UTM2LAM
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19930311 
+    Process_Time:  1427
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: EXPORT COVER BEACH BEACH NONE
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950424 
+    Process_Time:  1306
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ALL IMPORT COVER BEACH.E00 BEACH
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970204 
+    Process_Time:  2217
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ALL PROJECT COVER BEACH /DATA/FTP/DATA/STATEWIDE/K100/BEACH /DATA/CARTO/PROJECT/
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970205 
+    Process_Time:   955
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: ALL  BUILD /DATA/FTP/DATA/STATEWIDE/K100/BEACH POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970205 
+    Process_Time:   955
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB IMPORT COVER BEACH.E00 BEACH
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19971224 
+    Process_Time:   907
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH CREATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19971231 
+    Process_Time:  1615
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH UPDATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980109 
+    Process_Time:   946
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH UPDATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980128 
+    Process_Time:  1525
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH UPDATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980212 
+    Process_Time:  1150
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH UPDATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980212 
+    Process_Time:  1610
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH UPDATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980212 
+    Process_Time:  1630
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB   DOCUMENT BEACH UPDATE SJB
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980213 
+    Process_Time:   814
+    Source_Produced_Citation_Abbreviation: None
+    <B>Process_Step</B>
+    Process_Description: SJB BUILD BEACH POINT
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19980213 
+    Process_Time:   823
+    Source_Produced_Citation_Abbreviation: None
+<B><A name="section12.5">Cloud_Cover</A></B>
+N/A
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section3">Spatial_Data_Organization_Information</A>
+</font></H3>
+<font face="Arial, Helvetica, sans-serif"><B><A name="section3.2">Direct_Spatial_Reference_Method:</A></B> Point
+<BR>
+<B>Point_and_Vector_Object_Information</B>
+    <B>SDTS_Terms_Description</B>
+        SDTS_Point_and_Vector_Object_Type: Point
+        Point_and_Vector_Object_Count: 1212
+        SDTS_Point_and_Vector_Object_Type: String
+        Point_and_Vector_Object_Count: 0
+        SDTS_Point_and_Vector_Object_Type: GT-polygon composed of chains'
+        Point_and_Vector_Object_Count:  0
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section4">Spatial_Reference_Information </A>
+</font></H3>
+<font face="Arial, Helvetica, sans-serif"><B><A name="section4.1">Horizontal_Coordinate_System_Definition </A></B>
+</font><PRE>
+    <font face="Arial, Helvetica, sans-serif"><B>Planar</B>
+        Map_Projection:
+        Map_Projection_Name:  LAMBERT
+        Longitude_of_Central_Meridian: -120.5
+        Latitude_of_Projection_Origin: 41.75
+        Latitude_of_First_Standard_Parallel: 43
+        Latitude_of_Second_Standard_Parallel: 45.5
+        False_Easting:  400000.00000
+        False_Northing:  0.00000
+    <B>Planar_Coordinate_Information</B>
+	Planar_Coordinate_Encoding_Method: coordinate pair
+	Planar_Distance_Units: international feet, 3.28084 (.3048 meters)
+    <B>Geodetic Model</B>
+        Horizontal_Datum_Name: North American Datum of 1983
+        Ellipsoid_Name:  GRS1980
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section5">Entity_and_Attribute_Information </A>
+</font></H3>
+<font face="Arial, Helvetica, sans-serif"><B><A name="section5.1">Detailed_Description </A></B>
+    <B>Entity_Type</B>
+    <B>Entity_Type_Label:</B> BEACH.PAT
+    <B>Entity_Type_Definition:</B> Attributes of Beach Access points
+    <B>Entity_Type_Definition_Source:</B> Inventory of Oregon Coastal Beach Access Sites, Oregon Boating Facilities Guide
+    <B>Attribute:</B>
+        Attribute_Label: -
+        Attribute_Definition: Attributes of Beach Access points
+        Attribute_Definition_Source: Inventory of Oregon Coastal Beach Access Sites, Oregon Boating Facilities Guide
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: -
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: AREA
+        Attribute_Definition: Degenerate area of point
+        Attribute_Definition_Source: Assigned
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: 0
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PERIMETER
+        Attribute_Definition: Degenerate perimeter of point
+        Attribute_Definition_Source: Assigned
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: 0
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: BEACH#
+        Attribute_Definition: Internal feature number
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Sequential unique positive integer
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: BEACH-ID
+        Attribute_Definition: User-assigned feature number
+        Attribute_Definition_Source: User-defined
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Integer
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: ACCESS-NO
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Unknown
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: BEACH-DUMB
+        Attribute_Definition: Dummy Item
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Unknown
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: COUNTY
+        Attribute_Definition: Two letter code for each county
+        Attribute_Definition_Source: US Census Tiger Data
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: First two letters of county name
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: TYPE
+        Attribute_Definition: Site Type
+        Attribute_Definition_Source: OPRD and DLCD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: E (Estuary), B (Beach) or L (Lake)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: DEVEL-STATUS
+        Attribute_Definition: Is the beach access point Developed or undeveloped
+        Attribute_Definition_Source: OPRD and DLCD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: DEVEL, UNDEV
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: MAP#
+        Attribute_Definition: Township and Range of point location
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Valid Township and Range for Oregon
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: LOCATION
+        Attribute_Definition: Location of Boat Ramp
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Site location street name or park name
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: ACCESS
+        Attribute_Definition: Type of Access to Beach Access Point
+        Attribute_Definition_Source: DLCD, OPRD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: PED (pedestrian), VIS (Visual), Boat, Veh (Vehicle), NDA (No Developed Access)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PARKING
+        Attribute_Definition: Number of Parking spaces at Beach Access point
+        Attribute_Definition_Source: OPRD, DLCD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Valid Number 0 or greater
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PARKING-CAPACITY
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: DLCD, OPRD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: 0 or 1.00
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PARKING-ADDED
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: OPRD, DLCD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: positive mumber
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: #ID
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Unknown
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: COUNTY#
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: 0-16
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: DOCK-ID
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Unknown
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Unknown
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: DOCK-NAME
+        Attribute_Definition: Name of Dock
+        Attribute_Definition_Source: Oregon Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Valid Dock Name
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: DOCK-ADDRESS
+        Attribute_Definition: Street Address of Boat Dock
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Valid Address
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: CITY
+        Attribute_Definition: City Name
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Valid Oregon City Name
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: WATERBODY
+        Attribute_Definition: Waterbody the Dock is on
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Oregon Waterbodies
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: AGENCY
+        Attribute_Definition: Agency in charge of the boat ramp
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: 1-12 and PR
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: OWNER
+        Attribute_Definition: Dock Owner
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Owner Name
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PHONE
+        Attribute_Definition: Phone Number of the Dock (No area code included)
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: phone number
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PARKINGPAVED
+        Attribute_Definition: Paved Parking Lot?
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: #, Unk or Yes
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: PARKINGUNPAVED
+        Attribute_Definition: Parking Lot unpaved
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: #, Unknown or Yes
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: RAMP-CODE
+        Attribute_Definition: Code for type of boat ramp
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: A (asphalt), C (Concrete), G (Gravel), E (Earth/Sand), H (Hoist)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: RAMP-TYPE
+        Attribute_Definition: Material Boat Ramp is made of
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Asphalt, Concrete, Gravel, Earth/Sand, Hoist
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: NUM-LANES
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: 1-6 or N
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: BOARDFLOAT
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Y (yes)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: RESTROOMS
+        Attribute_Definition: Are Restrooms present
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Y (yes)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: CAMPING
+        Attribute_Definition: Is camping available
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Y (yes)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: FUEL
+        Attribute_Definition: Is Fuel Available
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Y (Yes)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: BOATRENTAL
+        Attribute_Definition: Can a boat be rented
+        Attribute_Definition_Source: Oregon State Marine Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Y (yes)
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <B>Attribute:</B>
+        Attribute_Label: FISHTYPE
+        Attribute_Definition: Unknown
+        Attribute_Definition_Source: Oregon State Marin Board
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Various
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+<B><A name="section5.2"> Overview_Description </A></B>
+    <B><A name="section5.2.1">Entity_and_Attribute_Overview </A></B>
+    Agency: 1 - city, 2 - county, 3 - port commission 4 - parks and
+    rec district, 5 - Oregon State Parks, 6 - Oregon Fish and
+    Wildlife, 7 - U.S. Forest Service, 8 - U.S. Corps of
+    Engineers, 9 - U.S. Fish and Wildlife, 10 - Bureau of
+    land mgmt, 11 - Bureau of Reclamation, 12 - Water and
+    Power Resource Agency, PR - Private with Public Access.
+    The theme is made up of a point table.  The table has
+    several items.  View the items section to see the attributes
+    for the table.  The items from Area to Parking-Added were derived
+    from information provided by OPRD.  The items after Parking-Added
+    were derived from information provided by the Oregon Marine Board.
+    <B>Entity_and_Attribute_Detail_Citation:</B> Not Available
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section6">Distribution_Information </A>
+</font></H3>
+<PRE>
+<font face="Arial, Helvetica, sans-serif"><B>Distributor</B>
+    <B>Contact_Person_Primary</B>
+        Contact_Person: Steve Barnett
+        Contact_Organization: State Service Center for GIS
+    <B>Contact_Position:</B> Data Administrator
+    <B>Contact_Address</B>
+        Address_Type: mailing address
+        Address: 155 Cottage Street NE
+        City: Salem
+        State_or_Province: OR
+        Postal_Code: 97310
+        Country: USA
+    <B>Contact_Voice_Telephone:</B> (503)378-2166
+    <B>Contact_Facsimile_Telephone:</B> (503)378-5200
+    <B>Contact_Electronic_Mail_Address:</B> data@sscgis.state.or.us
+    <B>Hours_of_Service:</B> 6:30 AM - 4:30 PM Tuesday - Friday
+<B>Resource_Description:</B> Beach Access points on the Oregon Coast, Columbia and upper Willamete River
+<B>Distribution_Liability:</B> no liability is assumed by SSCGIS
+<B>Technical_Prerequisites:</B> AI v.704
+</font><HR>
+<H3><font face="Arial, Helvetica, sans-serif"><A name="section7">Metadata_Reference_Section</A>
+</font></H3><font face="Arial, Helvetica, sans-serif">
+Metadata_Date: 19980213
+Metadata_Contact:
+   Contact_Information:
+    Contact_Person_Primary:
+      Contact_Person: Steve Barnett
+      Contact_Organization: State Service Center for GIS
+    Contact_Position: Data Administrator
+    Contact_Address:
+      Address_Type: mailing address
+      Address: 155 Cottage Street NE
+      City: Salem
+      State_or_Province: OR
+      Postal_Code: 97310
+      Country: USA
+    Contact_Voice_Telephone: (503)378-2166
+    Contact_Facsimile_Telephone: (503)378-5200
+    Contact_Electronic_Mail_Address: data@sscgis.state.or.us
+    Hours_of_Service: 6:30 AM - 4:30 PM Tuesday - Friday
+Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+Metadata_Standard_Version:  19940608
+Metadata_Time_Convention:  Local Time
+Metadata_Security_Information:
+    Metadata_Security_Classification_System:  None
+    Metadata_Security_Classification:  UNCLASSIFIED
+    Metadata_Security_Handling_Description:  None
+</font></PRE>
+</PRE></PRE></PRE>
+</BODY></HTML>
