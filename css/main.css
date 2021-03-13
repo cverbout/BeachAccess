@@ -64,7 +64,13 @@ html, body, #map {
   font-weight: bold;
 }
 
-#county-count {
+#access-count {
+  margin:0;
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+}
+#disaccess-count {
   margin:0;
   text-align: center;
   color: orange;

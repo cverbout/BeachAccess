@@ -49,7 +49,7 @@
     counties = {};
 
   // 5. load all datasets through promise mechnism and store them in an array
-  Promise.all([$.getJSON("data/cacounties.geojson")]).then(function(datasets) {
+  Promise.all([$.getJSON("data/cacountiesCount2.geojson")]).then(function(datasets) {
 
     // 6. Map relevant operations
 
@@ -85,7 +85,8 @@ function highlightFeature(e) {
 function clickFeature(e) {
   L.DomEvent.stopPropagation(e);
   $("#placename").text(e.target.feature.properties.COUNTY_NAM + " County");
-  $("#county-count").text(e.target.feature.properties.COUNTY_NUM);
+  $("#access-count").text(e.target.feature.properties.NUMPOINTS);
+  $("#disaccess-count").text(e.target.feature.properties.DISACCESS);
 }
 
 // 6.5 reset the hightlighted feature when the mouse is out of its region.
@@ -97,8 +98,9 @@ function resetHighlight(e) {
 mymap.on('click', onMapClick);
 // when click on any place on the map expect the counties layer, the text on the sidebar will be reset to the total number of WA.
 function onMapClick(e) {
-  $("#placename").text("Washington");
-  $("#county-count").text("341");
+  $("#placename").text("California Coast");
+  $("#access-count").text("1637");
+  $("#disaccess-couny").text("XXX");
 }
 
     // the javascript script will be inserted here.
@@ -107,14 +109,16 @@ function onMapClick(e) {
 <div id="info">
 
   <div id="title">
-    Cell Tower in Washington - Year 2010
+    California Beach Access
     <span><a href="https://twitter.com/UW" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
     <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i class="fa fa-github-square"></i></a></span>
   </div>
-  <p id="placename">Washington</p>
+  <p id="placename">Total Access Points</p>
   <div id="count" class="card">
-    <h5 id="desc"> # Cell Tower in the selected county</h5>
-    <p id="county-count">341</p>
+    <h5 id="desc"> # Access points in the selected county</h5>
+    <p id="access-count">1637</p>
+    <h5 id="desc"> # Disability Access points in the selected county</h5>
+    <p id="disaccess-count">XXX</p>
   </div>
   <div id="county-chart"></div>
   <div id="footer"></div>
