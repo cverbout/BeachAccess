@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cell Towers in Washington (2010)</title>
+  <link href="css/button.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+</head>
+<body>
+
+
+  <div id="map"></div>
+  <div id="countylist">
+    <button id="DelNorte" class="button">Del Norte</button>
+    <button id="Humboldt" class="button">Humboldt</button>
+    <button id="losAngeles" class="button">Los Angeles</button><br>
+    <button id="Marin" class="button">Marin</button><br>
+    <button id="Mendocino" class="button">Mendocino</button>
+    <button id="Monterey" class="button">Monterey</button><br>
+    <button id="Orange" class="button">Orange</button><br>
+    <button id="SanDiego" class="button">San Diego</button><br>
+    <button id="SanFrancisco" class="button">San Francisco</button><br>
+    <button id="SanLuisObispo" class="button">San Luis Obispo</button>
+    <button id="SanMateo" class="button">San Mateo</button>
+    <button id="SantaBarbara" class="button">Santa Barbara</button>
+    <button id="SantaCruz" class="button">Santa Cruz</button><br>
+    <button id="Sonoma" class="button">Sonoma</button><br>
+    <button id="Ventura" class="button">Ventura</button><br><br>
+    <button class="blue button" onclick="location.href='index.html';"> Map 1</button>
+  </div>
+
+  <script>
+  // 1.Create a map object and set the initial view point
+  var map2 = L.map('map', {
+    center: [37.33, -120.93],
+    zoom: 6,
+    maxZoom: 10,
+    minZoom: 3,
+    zoomControl: false,
+    detectRetina: true
+  });
+  // 2. move the zoom control to the top right corner.
+  new L.Control.Zoom({
+    position: 'topright'
+  }).addTo(map2);
+
+
+  // 3. Add a base map.
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png').addTo(map2);
+  // 4. Declare three global variables for the wa counties thematic layer, bar chart, and the organized wa data.
+  // 3. Add cell towers GeoJSON Data
+// Null variable that will hold cell tower data
+var points = null;
+// Get GeoJSON and put on it on the map when it loads
+points = L.geoJson.ajax("data/accessPoints.geojson",{
+    attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
+});
+
+points.addTo(map2);
+
+var counties = null;
+
+counties = L.geoJson.ajax("data/cacountiesCount2.geojson").addTo(map2);
+
+$("#DelNorte").click(function(){
+  map2.flyTo([41.709028, -124.080962], 10);
+});
+$("#Humboldt").click(function(){
+  map2.flyTo([40.786283, -124.062250], 10);
+});
+$("#losAngeles").click(function(){
+  map2.flyTo([34.041396, -118.381626], 10);
+});
+$("#Marin").click(function(){
+  map2.flyTo([38.016715, -122.783594], 10);
+});
+$("#Mendocino").click(function(){
+  map2.flyTo([39.387442, -123.651285], 10);
+});
+$("#Monterey").click(function(){
+  map2.flyTo([36.102660, -121.432441], 10);
+});
+$("#Orange").click(function(){
+  map2.flyTo([33.607274, -117.817544], 10);
+});
+$("#SanDiego").click(function(){
+  map2.flyTo([32.958082, -117.112571], 10);
+});
+$("#SanFrancisco").click(function(){
+  map2.flyTo([37.754314, -122.444469], 10);
+});
+$("#SanLuisObispo").click(function(){
+  map2.flyTo([35.352492, -120.688942], 10);
+});
+$("#SanMateo").click(function(){
+  map2.flyTo([37.413544, -122.312886], 10);
+});
+$("#SantaBarbara").click(function(){
+  map2.flyTo([34.646586, -120.106873], 10);
+});
+$("#SantaCruz").click(function(){
+  map2.flyTo([37.016464, -122.000263], 10);
+});
+$("#Sonoma").click(function(){
+  map2.flyTo([38.468205, -122.929681], 10);
+});
+$("#Ventura").click(function(){
+  map2.flyTo([34.313623, -119.129469], 10);
+});
+
+
+  </script>
+
+</body>
+</html>

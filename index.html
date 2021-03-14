@@ -41,7 +41,7 @@
 
 
   // 3. Add a base map.
-  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png').addTo(mymap);
 
   // 4. Declare three global variables for the wa counties thematic layer, bar chart, and the organized wa data.
   var countiesLayer = null,
@@ -87,6 +87,7 @@ function clickFeature(e) {
   $("#placename").text(e.target.feature.properties.COUNTY_NAM + " County");
   $("#access-count").text(e.target.feature.properties.NUMPOINTS);
   $("#disaccess-count").text(e.target.feature.properties.DISACCESS);
+  $("#percent").text((e.target.feature.properties.DISACCESS / e.target.feature.properties.NUMPOINTS * 100).toFixed(2) + " %");
 }
 
 // 6.5 reset the hightlighted feature when the mouse is out of its region.
@@ -100,7 +101,8 @@ mymap.on('click', onMapClick);
 function onMapClick(e) {
   $("#placename").text("California Coast");
   $("#access-count").text("1637");
-  $("#disaccess-couny").text("XXX");
+  $("#disaccess-count").text("794");
+  $("#percent").text("48.50 %");
 }
 
     // the javascript script will be inserted here.
@@ -118,7 +120,10 @@ function onMapClick(e) {
     <h5 id="desc"> # Access points in the selected county</h5>
     <p id="access-count">1637</p>
     <h5 id="desc"> # Disability Access points in the selected county</h5>
-    <p id="disaccess-count">XXX</p>
+    <p id="disaccess-count">794</p>
+    <h5 id="desc"> % of Disability Access points</h5>
+    <p id="percent">48.50 %</p>
+    <button id="mapButton" onclick="location.href='page2.html';">Access Point Map</button>
   </div>
   <div id="county-chart"></div>
   <div id="footer"></div>

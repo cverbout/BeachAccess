@@ -12,10 +12,21 @@ html, body, #map {
   top: 1%;
   bottom: 1%;
   left: .5%;
-  padding: 40px 15px 900px 15px;
-  background: #343a40;
+  padding: 40px 15px 0px 15px;
+  background: #006d77;
   color: white;
+}
 
+#countylist {
+  z-index: 1000;
+  position: absolute;
+  width: 200px;
+  top: 1%;
+  bottom: 5%;
+  left: .5%;
+  padding: 40px 15px 0px 15px;
+  background: #006d77;
+  color: white;
 }
 
 @media only screen and (max-width: 1026px) {
@@ -67,18 +78,33 @@ html, body, #map {
 #access-count {
   margin:0;
   text-align: center;
-  color: orange;
+  color: #e29578;
   font-size: 50px;
 }
 #disaccess-count {
   margin:0;
   text-align: center;
-  color: orange;
+  color: #e29578;
+  font-size: 50px;
+}
+#percent {
+  margin:0;
+  text-align: center;
+  color: #e29578;
   font-size: 50px;
 }
 
 #county-chart {
   top: 20px;
+}
+#mapButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 400;
+  color: black;
+  background-color: #83c5be;
 }
 
 #footer {
@@ -87,4 +113,8 @@ html, body, #map {
   font-size: 13px;
   line-height: 150%;
   color: lightgray;
+}
+
+.btn {
+
 }
