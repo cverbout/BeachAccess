@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <title>California Coast Disability Access</title>
+
   <link href="css/button.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -77,7 +80,8 @@
 
       countiesLayer = L.geoJSON(datasets[0], {
         style: style,
-        onEachFeature: onEachFeature
+        onEachFeature: onEachFeature,
+        attribution: 'Beach Access Data &copy; California Geoportal | California County Boundaries &copy; California Open Data Portal | Base Map &copy; CartoDB | Made By Chase Verbout'
       }).addTo(mymap);
 
       var legend = L.control({
@@ -147,7 +151,7 @@
 
   <div id="info">
     <div id="title">
-      California Beach Access
+      California Coast Beach Access
     </div>
     <p id="placename">California Coast</p>
     <div id="count" class="card">
