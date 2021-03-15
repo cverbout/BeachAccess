@@ -17,8 +17,6 @@
 </head>
 
 <body>
-
-
   <div id="map"></div>
   <div id="countylist">
     <div id="title2"> Counties</div>
@@ -39,13 +37,13 @@
       <button id="SantaCruz" class="small button">Santa Cruz</button><br>
       <button id="Sonoma" class="small button">Sonoma</button><br>
       <button id="Ventura" class="small button">Ventura</button><br>
-      <button id="Channelislands" class"small button">Channel Islands</button><br><br>
+      <button id="Channelislands" class="small button">Channel Islands</button><br><br>
       <button class="blue button" onclick="location.href='index.html';">Back</button>
     </div>
   </div>
 
   <script>
-    // 1.Create a map object and set the initial view point
+
     var map2 = L.map('map', {
       center: [37.33, -120.93],
       zoom: 6,
@@ -54,25 +52,21 @@
       zoomControl: false,
       detectRetina: true
     });
-    // 2. move the zoom control to the top right corner.
+
     new L.Control.Zoom({
       position: 'topright'
     }).addTo(map2);
 
-
-    // 3. Add a base map.
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png').addTo(map2);
-    // 4. Declare three global variables for the wa counties thematic layer, bar chart, and the organized wa data.
-    // 3. Add cell towers GeoJSON Data
-    // Null variable that will hold cell tower data
+
     var colors = chroma.scale('Set1').mode('lch').colors(13);
+
     for (i = 0; i < 3; i++) {
       $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
     }
+
     var points = null;
 
-
-    // Get GeoJSON and put on it on the map when it loads
     points = L.geoJson.ajax("data/accessPoints.geojson", {
       onEachFeature: function(feature, layer) {
         var list = "Name: " + feature.properties.Name + "<br>" +
@@ -88,17 +82,15 @@
           id = 2;
         } else {
           id = 0;
-        } // "Yakima MSA limited partnership"
+        }
         return L.marker(latlng, {
           icon: L.divIcon({
             className: 'fa fa-wheelchair marker-color-' + (id + 1).toString()
           })
         });
       },
-      attribution: 'Access Point Data &copy; Calfirnia dot Gov | California Coastal counties &copy; California.Gov | Base Map &copy; CartoDB | Made By Chase Verbout'
+      attribution: 'Beach Access Data &copy; California Geoportal | California County Boundaries &copy; California Open Data Portal | Base Map &copy; CartoDB | Made By Chase Verbout'
     });
-
-
 
     points.addTo(map2);
 
@@ -113,6 +105,7 @@
         dashArray: '4'
       };
     }
+
     counties = L.geoJson.ajax("data/cacountiesCount2.geojson", {
       style: style
     }).addTo(map2);
@@ -184,7 +177,7 @@
       map2.flyTo([34.313623, -119.129469], 10);
     });
     $("#Channelislands").click(function() {
-      map2.flyTo([33.681031, -119.308304], 9);
+      map2.flyTo([33.681031, -119.308304], 8);
     });
   </script>
 
