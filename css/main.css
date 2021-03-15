@@ -29,6 +29,7 @@ html, body, #map {
   color: white;
 }
 
+
 @media only screen and (max-width: 1026px) {
   #info, {
     visibility: hidden !important;
