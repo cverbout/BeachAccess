@@ -24,7 +24,7 @@ html, body, #map {
   top: 1%;
   bottom: 5%;
   left: .5%;
-  padding: 40px 15px 0px 15px;
+  padding: 20px 15px 0px 15px;
   background: #006d77;
   color: white;
 }
@@ -54,6 +54,13 @@ html, body, #map {
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
 }
+#title2 {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 
 /* social media icons */
 #title span {
@@ -115,6 +122,48 @@ html, body, #map {
   color: lightgray;
 }
 
-.btn {
+.legend {
+    line-height: 16px;
+    width: 180px;
+    color: #333333;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
 
+}
+
+.legend i {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+}
+
+.legend img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    float: left;
+}
+
+.legend p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.leaflet-tooltip.feature-label {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 0 0 2px #FFFFFF;
+    color: rgba(35, 35, 35, 0.78)
 }
