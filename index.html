@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <link href="css/button.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
   <link rel="stylesheet" href="css/leaflet.css" />
@@ -26,7 +27,7 @@
   <script>
   // 1.Create a map object and set the initial view point
   var mymap = L.map('map', {
-    center: [37.33, -120.93],
+    center: [37.413544, -125.312886],
     zoom: 6,
     maxZoom: 10,
     minZoom: 3,
@@ -104,7 +105,7 @@ function onMapClick(e) {
   $("#disaccess-count").text("794");
   $("#percent").text("48.50 %");
 }
-
+L.control.scale({position: 'bottomright'}).addTo(mymap);
     // the javascript script will be inserted here.
   </script>
   <!-- sidebar -->
@@ -123,7 +124,7 @@ function onMapClick(e) {
     <p id="disaccess-count">794</p>
     <h5 id="desc"> % of Disability Access points</h5>
     <p id="percent">48.50 %</p>
-    <button id="mapButton" onclick="location.href='page2.html';">Access Point Map</button>
+    <button id="mapButton" class="blue button" onclick="location.href='page2.html';">Access Point Map</button>
   </div>
   <div id="county-chart"></div>
   <div id="footer"></div>
