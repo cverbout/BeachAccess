@@ -59,6 +59,11 @@ html, body, #map {
   font-family: 'Oswald', sans-serif;
   margin-bottom: 15px;
   text-align: center;
+  background-color: #83c5be;
+  border: 1.5px solid;
+  border-color: #e29578;
+  padding: 5px 0 5px 0;
+  
 }
 
 
