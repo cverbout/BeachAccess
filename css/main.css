@@ -2,7 +2,7 @@ html, body, #map {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  font-family: 'Titillium Web', serif;
+  font-family: 'Arial', serif;
 }
 
 #info {
@@ -31,7 +31,29 @@ html, body, #map {
 
 
 @media only screen and (max-width: 1026px) {
-  #info, {
+  #info {
+    width: 0;
+    height: 0;
+    visibility: hidden !important;
+  }
+
+  #info * {
+    width: 0;
+    height: 0;
+    visibility: hidden !important;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  #countylist {
+    width: 0;
+    height: 0;
+    visibility: hidden !important;
+  }
+
+  #countylist * {
+    width: 0;
+    height: 0;
     visibility: hidden !important;
   }
 }
@@ -52,12 +74,12 @@ html, body, #map {
 
 
 #title {
-  font-size: 25px;
-  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  font-family: 'Merriweather';
 }
 #title2 {
-  font-size: 25px;
-  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  font-family: 'Merriweather';
   margin-bottom: 15px;
   text-align: center;
   background-color: #269CE9;
@@ -76,8 +98,9 @@ html, body, #map {
 }
 
 #placename {
-  font-size: 40px;
-  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  font-family: 'Merriweather';
+  padding-bottom: 90px;
 }
 
 /* card decks */
@@ -92,19 +115,19 @@ html, body, #map {
   margin:0;
   text-align: center;
   color: #f0f3bd;
-  font-size: 50px;
+  font-size: 45px;
 }
 #disaccess-count {
   margin:0;
   text-align: center;
   color: #f0f3bd;
-  font-size: 50px;
+  font-size: 45px;
 }
 #percent {
   margin:0;
   text-align: center;
   color: #f0f3bd;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 #county-chart {
@@ -132,13 +155,13 @@ html, body, #map {
     line-height: 16px;
     width: 180px;
     color: #333333;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Arial', sans-serif;
     padding: 6px 8px;
     background: white;
     background: rgba(255,255,255,0.5);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 5px;
-    font-family: 'Titillium Web', sans-serif;
+
 
 }
 
@@ -169,7 +192,7 @@ html, body, #map {
     box-shadow: none;
     font-weight: bold;
     font-size: 12px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Arial', sans-serif;
     text-shadow: 0 0 2px #FFFFFF;
     color: rgba(35, 35, 35, 0.78)
 }
