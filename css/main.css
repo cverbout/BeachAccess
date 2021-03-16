@@ -76,6 +76,7 @@ html, body, #map {
 #title {
   font-size: 23px;
   font-family: 'Merriweather';
+
 }
 #title2 {
   font-size: 23px;
@@ -150,12 +151,11 @@ hr {
 }
 #mapButton {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 91%;
+  right: 70%;
   padding: 10px;
   z-index: 400;
   color: white;
-
 }
 
 #footer {
