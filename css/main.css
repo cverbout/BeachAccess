@@ -105,29 +105,44 @@ html, body, #map {
 
 /* card decks */
 #desc {
-  text-align: center;
+  text-align: left;
   color: lightgray;
   font-size: medium;
   font-weight: bold;
+  margin-left: 50px;
 }
 
 #access-count {
   margin:0;
-  text-align: center;
+  text-align: left;
   color: #f0f3bd;
-  font-size: 45px;
+  font-size: 40px;
+  margin-left: 275px;
+}
+hr {
+  margin-left: 50px;
+  margin-right: 75px;
 }
 #disaccess-count {
   margin:0;
-  text-align: center;
+  text-align: left;
   color: #f0f3bd;
-  font-size: 45px;
+  font-size: 40px;
+  margin-left: 275px;
 }
 #percent {
   margin:0;
-  text-align: center;
+  text-align: left;
   color: #f0f3bd;
-  font-size: 45px;
+  font-size: 40px;
+  margin-left: 275px;
+}
+.info_hr {
+  border: 1px solid;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  border-radius: 25px;
 }
 
 #county-chart {
