@@ -1,5 +1,5 @@
 # California Coast Disability Access
-**Link to project:** https://cverbout.github.io/BeachAccess
+## **Check it out:** https://cverbout.github.io/BeachAccess
 ![beachWheelchair](img/beachWheelchair.jpg)
 ## Project Description
 This project is the culminating product of GEOG 458 at the University of Washington. It includes 2 web maps utilizing various coding components including HTML, JavaScript, CSS as well as more specific tools such as QGIS, leaflet, and jquery. The web maps contain key map elements like scales, legends, and zoom control. Both web maps also employ a fixed container to the left for use as a dashboard/directory of sorts also permitting back and forth traversal.
